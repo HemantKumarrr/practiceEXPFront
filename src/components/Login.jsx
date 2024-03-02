@@ -13,7 +13,8 @@ const Login = () => {
           method: 'POST',
           body: JSON.stringify({email, password}),
           headers: { 'Content-Type' : 'application/json' },
-          credentials: 'include'
+          credentials: 'include',
+          mode: 'cors'
         })
         console.log("You'r Logged In")
       } catch(err) {

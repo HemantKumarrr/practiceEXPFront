@@ -13,7 +13,8 @@ const Signup = () => {
           method: 'POST',
           body: JSON.stringify({email, password}),
           headers: { 'Content-Type' : 'application/json' },
-          credentials: 'include'
+          credentials: 'include',
+          mode: 'cors'
         })
         console.log("You'r Signed In")
       } catch(err) {
